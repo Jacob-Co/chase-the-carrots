@@ -1,0 +1,53 @@
+* {
+  font-size: 24px;
+}
+
+html, body {
+  margin: 0;
+}
+
+html {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height: 100%;
+  color: white;
+}
+
+body {
+  overflow: hidden;
+  height: inherit;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+  position: absolute;
+  margin: 0;
+  top: -4px;
+  right: 5px;
+
+  color: transparent;
+  text-shadow: 0 0 4px white;
+}
+
+p {
+  font-size: 1.75rem;
+  margin: 0;
+  letter-spacing: -1px;
+  text-shadow: 0 0 4px white;
+}
+
+#main-menu {
+  visibility: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#main-menu p {
+  font-size: 1.25rem;
+}
+
