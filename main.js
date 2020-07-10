@@ -230,8 +230,8 @@ function createBall(balls, evilBall) {
   let ball = new Ball(
     randomBallPosition('x', size, evilBall),
     randomBallPosition('y', size, evilBall),
-    random(-5, 5),
-    random(-5, 5),
+    random(-7, 7),
+    random(-7, 7),
     size,
     'rgb(' + random(10,255) + ',' + random(10,255) + ',' + random(10,255) +')'
   );
@@ -301,9 +301,10 @@ function loop() {
     carrotBall = new CarrotBall(randomBallPosition('x', 10, evilBall), randomBallPosition('y', 10, evilBall));
     score += 1;
     evilBall.increaseSpeed();
-    let rand = Math.floor(Math.random() * 2);
+    let rand = Math.floor(Math.random() * 3);
     console.log(rand);
-    if (rand === 1)createBall(balls, evilBall);
+    if (rand > 0)createBall(balls, evilBall);
+    if (rand > 0)createBall(balls, evilBall);
   }
 
   let gameLoop = requestAnimationFrame(loop);
